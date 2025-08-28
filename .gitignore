@@ -1,0 +1,36 @@
+# Local .terraform directories
+**/.terraform/*
+
+# Terraform lock & state files
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+*.terraform.lock.hcl
+*.terraform
+*terraform.tfstate.backup
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Override files (used for local testing)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Sensitive variable files (keep credentials out of GitHub)
+secret.tfvars
+*.pem
+*.key
+*.crt
+*.pub
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
