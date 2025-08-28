@@ -1,67 +1,36 @@
-# ========== Terraform ==========
-
-# Local .terraform directories (providers, plugins)
+# Local .terraform directories
 **/.terraform/*
 
-# Terraform state files
+# Terraform lock & state files
 *.tfstate
 *.tfstate.*
-*.tfstate.backup
-
-# Crash log files
-crash.log
-
-# Override variable files (sensitive)
 *.tfvars
 *.tfvars.json
+*.terraform.lock.hcl
+*.terraform
+*terraform.tfstate.backup
 
-# Lock file (depends on project; ignore if auto-generated)
-.terraform.lock.hcl
+# Crash logs
+crash.log
+crash.*.log
 
-# Plan files
-*.plan
+# Override files (used for local testing)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
 
-# ========== SSH Keys / Credentials ==========
-
-# Private keys
+# Sensitive variable files (keep credentials out of GitHub)
+secret.tfvars
 *.pem
 *.key
-
-# Public keys
+*.crt
 *.pub
 
-# AWS credentials (if mistakenly exported)
-*.aws
-
-# ========== OS / Editor Specific ==========
-
-# macOS
-.DS_Store
-
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Linux
-*~
-
-# VS Code
+# Ignore IDE/editor settings
 .vscode/
-*.code-workspace
-
-# JetBrains IDEs
 .idea/
-
-# Logs
-*.log
-
-# ========== Custom Ignore ==========
-
-# Backup / temp files
-*.bak
-*.tmp
-
-# Output folders
-output/
+*.swp
+*.swo
+.DS_Store
 
